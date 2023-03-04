@@ -1,5 +1,5 @@
 [env]
-TELEGRAM_BOT_TOKEN = "your-telegram-bot-token-here"
+TELEGRAM_BOT_TOKEN = "5938743745:AAH_vYTPnMWsol1fbtM_Ae5QOAe9Em-_qBw"
 
 [build]
 builder = "nixpacks"
@@ -7,8 +7,6 @@ buildCommand = "echo building!"
 
 [deploy]
 startCommand = "echo starting!"
-healthcheckPath = "/"
-healthcheckTimeout = 100
 restartPolicyType = "never"
 
 [start]
