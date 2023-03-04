@@ -7,7 +7,7 @@ buildCommand = "echo building!"
 
 [deploy]
 startCommand = "echo starting!"
-restartPolicyType = "never"
+restartPolicyType = "always"
 
 [start]
 web = "python bot.py"
