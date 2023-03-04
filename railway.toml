@@ -1,12 +1,8 @@
+[env]
+TELEGRAM_BOT_TOKEN = "your-telegram-bot-token-here"
+
 [build]
-builder = "nixpacks"
-buildCommand = "echo building!"
+dockerfile = "Dockerfile"
 
-[deploy]
-startCommand = "echo starting!"
-healthcheckPath = "/healthcheck"
-healthcheckTimeout = 50
-restartPolicyType = "never"
-
-[healthcheck]
-web = "/healthcheck"
+[start]
+web = "python bot.py"
