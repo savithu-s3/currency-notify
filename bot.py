@@ -1,7 +1,7 @@
 import telegram
 from telegram.ext import Updater, CommandHandler
 
-@app.route('/health')
+@app.route('/healthcheck')
 def healthcheck():
     return "OK"
 
