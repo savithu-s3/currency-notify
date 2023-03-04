@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler
 
 @app.route('/healthcheck')
 def healthcheck():
-    return "OK"
+    return "OK", 200
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Hello, I'm a bot!")
